@@ -1,14 +1,19 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
 
-int main(int argc,char *argv[]){
+int main() {
     double a[10];
-    for(int i = 0; i<10; i++){
-        a[i] = atof(argv[i+1]);
+    
+    for (int i = 0; i < 10; i++) {
+        scanf("%lf", &a[i]);
     }
-    double c = 0;
-    for(int i = 0; i<10; i++){
-        c+=a[i];
+
+    double sum = 0.0;
+    for (int i = 0; i < 10; i++) {
+        sum += a[i];
     }
-    printf("%.2f", c/10.0);
+
+    double average = sum / 10.0;
+    printf("%.2f\n", average);
+
+    return 0;
 }
