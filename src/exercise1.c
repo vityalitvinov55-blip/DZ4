@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include <stdio.h>
 
 int main() {
@@ -13,7 +14,7 @@ int main() {
     }
 
     double average = sum / 10.0;
-    printf("%.2f\n", average);
+    printf("%.2f", average);
 
     return 0;
 }
