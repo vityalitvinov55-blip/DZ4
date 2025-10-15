@@ -2,9 +2,9 @@
 
 int main(int argc, char** argv)
 {
-    float a[10] = {};
+    double a[10] = {};
     for (int i = 0; i < 10; i++) {
-        scanf("%lf", &a[i]);
+        scanf("%f", &a[i]);
     }
 
     float c = 0;
