@@ -1,20 +1,18 @@
-#include<stdio.h>
 #include <stdio.h>
 
-int main() {
-    double a[10];
-    
-    for (int i = 0; i < 10; i++) {
-        scanf("%lf", &a[i]);
+int main(int argc, char** argv)
+{
+    float numbers[10] = {};
+    scanf("%f %f %f %f %f %f %f %f %f %f", &numbers[0], &numbers[1], &numbers[2],
+          &numbers[3], &numbers[4], &numbers[5], &numbers[6], &numbers[7],
+          &numbers[8], &numbers[9]);
+
+    float middle = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        middle += numbers[i];
     }
 
-    double sum = 0.0;
-    for (int i = 0; i < 10; i++) {
-        sum += a[i];
-    }
-
-    double average = sum / 10.0;
-    printf("%.2f", average);
-
-    return 0;
+    middle /= 10;
+    printf("%f\n", middle);
 }
