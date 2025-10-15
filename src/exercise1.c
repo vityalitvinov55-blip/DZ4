@@ -4,7 +4,7 @@ int main(int argc, char** argv)
 {
     double a[10] = {};
     for (int i = 0; i < 10; i++) {
-        scanf("%f", &a[i]);
+        scanf("%lf", &a[i]);
     }
 
     float c = 0;
