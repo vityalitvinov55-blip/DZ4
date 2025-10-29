@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(int argc,char *argv[]){
-    dooble a[10];
+    double a[10];
     for(int i = 0; i<10; i++){
          scanf("%lf", &a[i]);
     }
