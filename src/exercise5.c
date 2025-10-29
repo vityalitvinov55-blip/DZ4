@@ -8,13 +8,13 @@ int main(int argc, char* argv[]) {
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 3; j++) {
-            a[i][j] = atof(argv[i * 3 + j + 1]);
+            scanf("%lf", &a[i][j]);
         }
     }
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 10; j++) {
-            b[i][j] = atof(argv[30 + i * 10 + j + 1]);
+            scanf("%lf", &b[i][j]);   
         }
     }
 
@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-            printf("%g ", c[i][j]);
+            printf("%f ", c[i][j]);
         }
     }
 }
