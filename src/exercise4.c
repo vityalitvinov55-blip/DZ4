@@ -3,17 +3,18 @@
 
 int main(int argc, char* argv[]) {
     double a[10];
-    double x = atof(argv[11]);
-    int k = atoi(argv[12]);
+    double x;
+    int k;
 
     for (int i = 0; i < 10; i++) {
-        a[i] = atof(argv[i + 1]);
+        scanf("%lf",&a[i]);
     }
 
     for (int i = 9; i > k; i--) {
         a[i] = a[i - 1];
     }
-    a[k] = x;
+    x = atof(argv[1]);
+    k = atoi(argv[2]);
 
     for (int i = 0; i < 10; i++) {
         printf("%g ", a[i]);
